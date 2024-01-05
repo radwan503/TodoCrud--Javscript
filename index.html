@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="./assets/css/fontawesome.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+  <!-- =================================== 
+      User List
+    ==================================== -->
+  <div id="card-list" class="card" style="width: 20rem;">
+    <div class="card-header d-flex justify-content-between align-items-center bg-white text-secondary fw-bold fs-6">
+      Upcomming Activites
+      <button class="add-btn text-primary bg-light p-2 rounded-5 border-0" data-bs-toggle="modal"
+        data-bs-target="#userCreate"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    <ul id="userList" class="list-group list-group-flush">
+      <!-- single user -->
+      <li class="list-group-item d-flex justify-content-between">
+        <div>
+          <h5>Call Katie</h5>
+          <p class="m-0">August 27,2020 | <span>Danied</span></p>
+        </div>
+        <div class="d-flex align-items-center gap-3 dropstart">
+          <button class="mark-read-btn  bg-primary text-white p-2 rounded-5 border-0"><i
+              class="fa-solid fa-check"></i></button>
+          <button class="bg-transparent text-secondary dropdown-toggle p-2 rounded-5 border-0 fs-3"
+            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <ul class="dropdown-menu ">
+            <li class="mark-item"><a class="dropdown-item" href="#">Mark as Done</a></li>
+            <li class="delete"><a class="dropdown-item" href="#">Delete</a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- single user -->
+      <li class="list-group-item d-flex justify-content-between">
+        <div>
+          <h5>Email Katie</h5>
+          <p class="m-0">August 27,2020 | <span>Ramona</span></p>
+        </div>
+        <div class="d-flex align-items-center gap-3 dropstart">
+          <button class="mark-read-btn  bg-primary text-white p-2 rounded-5 border-0"><i
+              class="fa-solid fa-check"></i></button>
+          <button class="bg-transparent text-secondary dropdown-toggle p-2 rounded-5 border-0 fs-3"
+            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <ul class="dropdown-menu ">
+            <li class="mark-item"><a class="dropdown-item" href="#">Mark as Done</a></li>
+            <li class="delete"><a class="dropdown-item" href="#">Delete</a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- single user -->
+      <li class="list-group-item d-flex justify-content-between">
+        <div>
+          <h5>Call Katie</h5>
+          <p class="m-0">August 27,2020 | <span>Danied</span></p>
+        </div>
+        <div class="d-flex align-items-center gap-3 dropstart">
+          <button class="mark-read-btn  bg-primary text-white p-2 rounded-5 border-0"><i
+              class="fa-solid fa-check"></i></button>
+          <button class="bg-transparent text-secondary dropdown-toggle p-2 rounded-5 border-0 fs-3"
+            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <ul class="dropdown-menu ">
+            <li class="mark-item"><a class="dropdown-item" href="#">Mark as Done</a></li>
+            <li class="delete"><a class="dropdown-item" href="#">Delete</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- =================================== 
+      User List Add modal
+    ==================================== -->
+  <div class="modal fade" id="userCreate" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary py-1">
+          <h5 class="modal-title text-white">Book Visit</h5>
+          <button type="button" class="close bg-transparent border-0 text-white fs-3" data-bs-dismiss="modal"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="userForm">
+            <div class="form-group mb-4">
+              <label class="text-black fw-bold" for="dob">Date of Birth:</label>
+              <input type="date" class="form-control border-0 border-bottom rounded-0" id="dob" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="text-black fw-bold" for="fullName">Full Name:</label>
+              <input type="text" class="form-control border-0 border-bottom rounded-0" id="fullName" required>
+            </div>
+
+
+            <div class="form-group mb-4">
+              <label class="text-black fw-bold" for="nickName">Nick Name:</label>
+              <input type="text" class="form-control border-0 border-bottom rounded-0" id="nickName" required>
+            </div>
+
+
+            <div class="border-0 d-flex justify-content-end align-items-center gap-4 modal-footer">
+              <button type="button" class="btn btn-outline-primary px-3 fw-medium"
+                data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary text-white px-3 fw-medium">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

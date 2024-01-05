@@ -1,0 +1,41 @@
+@use "./variable" as *;
+
+#card-list {
+  .add-btn {
+    line-height: 20px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .list-group-item {
+    p {
+      font-size: 14px;
+      color: $gray-100;
+    }
+
+    .mark-read-btn {
+      line-height: 15px;
+      height: 30px;
+      width: 30px;
+      visibility: hidden;
+
+      &.active {
+        visibility: visible;
+      }
+    }
+
+    .dropdown-toggle:after {
+      content: none;
+    }
+  }
+
+  .dropstart {
+    .dropdown-toggle::before {
+      display: none;
+    }
+  }
+}
+
+.modal-footer {
+  margin-top: 100px;
+}
